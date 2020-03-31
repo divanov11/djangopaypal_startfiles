@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Store</title>
+	<meta id="meta" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+
+	<style type="text/css">
+		body{
+			background-color: #f0f0f0;
+			
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg">
+				<br>
+				<img src="{{product.image_url}}">
+			</div>
+			<div class="col-lg">
+				<br>
+				<div class="card card-body">
+					<h3>{{product.name}}</h3>
+					<hr>
+					<h4>Total: ${{product.price}}</h4>
+					<hr>
+					<div id="paypal-button-container"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
